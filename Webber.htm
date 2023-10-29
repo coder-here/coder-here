@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: poppins;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            background-color: rgb(0, 0, 90);
+
+
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        a {
+            width: 100px;
+            color: white;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px;
+        }
+
+        .leftsection {
+            width: 50%;
+            font-size: 3rem;
+            margin: 10px;
+
+        }
+
+        .rightsection {
+            width: 30%;
+
+        }
+
+        .rightsection img {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            height: 400px;
+            overflow: hidden;
+            width: 400px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(153, 153, 226);
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+
+        .hr {
+            height: 1.2px;
+            background: #9c97f1;
+            border: 0;
+            margin: 30px 80px;
+        }
+
+        .second-section {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .second-section h1 {
+            font-size: 1.9rem;
+        }
+
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+            margin: 0 100px;
+        }
+
+        .verticle {
+            height: 100px;
+            width: 1px;
+            background-color: white;
+            margin: 0 300px;
+        }
+
+        .verticle-title {
+            justify-content: space-around;
+            top: 75px;
+            width: 150px;
+            position: relative;
+
+        }
+
+
+        .verticle-des {
+            position: relative;
+            top: 100px;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .footer {
+            display: flex;
+
+
+
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            margin: 23px;
+            height: 233px;
+            justify-content: space-around;
+
+        }
+
+        .footer {
+            display: inline;
+            list-style: circle;
+        }
+
+        .footer a {
+            width: 1=420px;
+        }
+
+        .footer a li {
+            margin-left: 290px;
+
+
+        }
+
+.text-center{
+    text-align: center;
+    color: gray;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harry portfolio</div>
+            <div class="right">
+
+                <ul><a href="https://www.youtube.com/watch?v=vk7ADZfnSE4&ab_channel=CodeWithHarry">Home</a>
+                    <ul><a href="https://www.youtube.com/watch?v=vk7ADZfnSE4&ab_channel=CodeWithHarry">About</a>
+                        <ul><a href="https://www.youtube.com/watch?v=vk7ADZfnSE4&ab_channel=CodeWithHarry">Contact</a>
+                            <ul><a
+                                    href="https://www.youtube.com/watch?v=vk7ADZfnSE4&ab_channel=CodeWithHarry">logger</a>
+
+
+
+                            </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection">
+
+                <h1> HI my Name is <span style="color: purple;">Abdul </span><span
+                        style="background-color: blue;color: white;">Rasheed.</span> And
+                    <br>Im a Web Developer
+                </h1>
+                <!-- Element to contain animated typing -->
+                <h1>
+                    <Div>And Im A Pationate </Div>
+                    <div style="color: purple;">
+                        <h1></h1>
+                        <span id="element"></span>
+                        <div class="button">
+                            <a href="index.html" download="Webber"><button>Download Oracle File</button></a>
+                        
+
+                        </div>
+                    </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="https://img.freepik.com/premium-psd/3d-working-illustration_380580-710.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698192000&semt=ais"
+                    alt="">
+            </div>
+        </section>
+        <hr class="hr">
+        <section class="second-section">
+            <span style="color: grey;">What i Have Done So Far.</span>
+            <h1>Work Experience.</h1><br>
+            <div class="box">
+                <div class="verticle">
+                    <img src="data:image/png;base64,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"
+                        class="image-button" style="height: 30px;width: 30px;top: -900px;">
+                    <div class="verticle-title">
+
+                        Html Developer(2020-2022) <img src="facebook.png" alt="" height="30px" width="30px"> </div>
+
+
+
+
+
+                </div>
+                <div class="verticle">
+                    <h1 style="font-size: 1rem;"> <br><br><br><br><br><br> Node.js Developer(2022-2023) <img
+                            src="facebook.png" style="height: 30px;width: 30px;position: relative;top: -165px;">
+
+                </div><br>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer1">Rasheed Protofilio.Ineed a work This is my ig <a href=""></a></div>
+            <div class="footer2">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+
+
+                </ul>
+
+
+
+
+
+
+
+
+            </div>
+            <div class="footer3">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+
+
+                </ul>
+            </div>
+            <div class="footer4">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Contact</li>
+
+
+                </ul>
+
+            </div>
+
+
+
+        </div>
+        <div class="text-center"><br><br>
+         Copy Right  &#169    www.Rasheedportfolio.com /All Wites reserved.
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web </i> Developer.', '&amp; Editor.', "Web Designer", "Graphic designer", "Programmer", "Web Designer", "Graphic designer", "Programmer", "Hero", "Rasheed", "KIng", "Rasheed"],
+            typeSpeed: 50,
+        });
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
